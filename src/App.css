@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+
+.ququmber-font {
+  font-family: "Henny Penny", cursive;
+}
+/* === Common === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-outer {
+  padding: 0 40px;
+}
+
+.section-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+/* === / Common === */
+
+/* === form === */
+.form-label {
+  font-weight: 700;
+}
+/* === / form === */
+
+/* === timerSettings === */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  text-align: center;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.settingsLabelStyle {
+  padding-left: 10px;
+  margin-top: 10px;
+}
+/* === / timerSettings === */
+
+.timer {
+  margin-top: 4%;
+  text-align: center;
+}
+
+.margin-edges {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.margin-bottom {
+  margin-bottom: 5%;
+}
+
+html::before {
+  content: "";
+  background-image: url("../src/quq.png");
+  background-repeat: repeat;
+  position: absolute;
+  z-index: -5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html::after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.8);
+  background-repeat: repeat;
+  position: absolute;
+  z-index: -5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
